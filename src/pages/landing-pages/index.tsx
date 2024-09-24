@@ -26,7 +26,7 @@ const LandingPage: React.FC = () => {
         'service_9lq6sao', // Replace with your EmailJS Service ID
         'template_dsaxkwr', // Replace with your EmailJS Template ID
         formData,
-        'oKVvwjfs3Ga_swctU4ia_' // Replace with your EmailJS User ID
+        'YNHQgJVqAXrgwI6vo' // Replace with your EmailJS User ID
       )
       .then((response) => {
         console.log('Email sent successfully:', response.status, response.text);
