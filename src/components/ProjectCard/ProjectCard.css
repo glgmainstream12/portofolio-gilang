@@ -1,37 +1,50 @@
-.project-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 15px;
-    width: 300px;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .project-info {
-    padding: 15px;
-    color: white;
-  }
-  
-  .project-info h3 {
-    margin-top: 0;
-  }
-  
-  .project-info p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-  
-  .project-info a {
-    color: #00aaff;
-    text-decoration: none;
-  }
-  
-  .project-info a:hover {
-    text-decoration: underline;
-  }
-  
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.progress-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0px;
+}
+
+svg {
+  transform: rotate(275deg); /* Rotate to start progress from the top */
+}
+
+.progress-background {
+  fill: none;
+  stroke: #e0e0e0; /* Background circle color */
+}
+
+.progress-bar {
+  fill: none;
+  stroke: #4caf50; /* Progress bar color */
+  stroke-linecap: round; /* Make the ends of the stroke rounded */
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(0deg);
+  transform-origin: 50% 150%;
+}
+
+.skill-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: bold;
+}
