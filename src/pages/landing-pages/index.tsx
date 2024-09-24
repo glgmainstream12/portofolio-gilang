@@ -3,6 +3,7 @@ import './index.css';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import ExperienceCard from '../../components/ExperienceCard/ExperienceCard';
 import CheckKhodam from '../../../public/cek_khodam.png'
+import RotiEnak from '../../../public/roti_enak.png'
 
 const LandingPage: React.FC = () => {
   return (
@@ -72,7 +73,7 @@ const LandingPage: React.FC = () => {
           <ProjectCard
             title="Project 1: Landing Page Bakery Delight"
             description="FIRST project with React JS. Page of bakery delight restaurant that already establish since 1939. The important updgrade for Internet of Things ."
-            imageUrl="public/roti_enak.png"
+            imageUrl= {RotiEnak}
             projectLink="/portofolio-1"
           />
           <ProjectCard
