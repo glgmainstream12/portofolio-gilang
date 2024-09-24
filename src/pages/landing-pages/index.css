@@ -10,7 +10,7 @@ body {
   text-align: center;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   height: 100%;
 }
@@ -36,7 +36,6 @@ html{
   width: 100px;
 }
 
-
 .nav {
   display: flex;
 }
@@ -52,22 +51,21 @@ html{
 }
 
 .landing-header {
-  height: 75vh; /* Keep the full height for the header section */
-  display: flex; /* Use Flexbox to center the content */
-  justify-content: center; /* Center the content vertically */
-  align-items: center; /* Center the content horizontally */
-  box-sizing: border-box; /* Ensures padding is included within the height */
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .landing-header-content {
-  height: 500px; /* Manually set the height for the inner content */
-  display: flex; /* Flexbox for centering the content inside */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center the items vertically inside the content */
-  align-items: center; /* Center the items horizontally inside the content */
-  text-align: center; /* Align text in the center */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
 
 .profile-photo {
   border-radius: 50%;
@@ -90,7 +88,7 @@ h1, h2, h3 {
 p {
   font-size: 16px;
   line-height: 1.6;
-  color: #ccc; /* Slightly lighter than pure white */
+  color: #ccc;
 }
 
 ul {
@@ -124,7 +122,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 -15px; /* To offset the margin of child cards */
+  margin: 0 -15px;
 }
 
 .project-card,
@@ -136,17 +134,56 @@ img {
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav a {
+    margin: 5px 0;
+  }
+
+  .project-card,
+  .experience-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: row;
+  }
+
+  .project-card,
+  .experience-card {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .project-card,
   .experience-card {
     width: calc(50% - 30px);
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 992px) {
   .project-card,
   .experience-card {
-    width: calc(100% - 30px);
+    width: calc(33.333% - 30px);
   }
 }
 
@@ -169,7 +206,6 @@ img {
   background-color: #333;
   color: #fff;
   font-size: 16px;
-  
 }
 
 .contact-form input::placeholder,
@@ -179,7 +215,7 @@ img {
 
 .contact-form button {
   padding: 10px 20px;
-  background-color:linear-gradient #434343;
+  background-color: #434343;
   color: white;
   border: none;
   border-radius: 5px;
@@ -198,4 +234,3 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
