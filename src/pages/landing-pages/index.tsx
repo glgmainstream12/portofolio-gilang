@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import ExperienceCard from '../../components/ExperienceCard/ExperienceCard';
+import CheckKhodam from '../../../public/cek_khodam.png'
 
 const LandingPage: React.FC = () => {
   return (
@@ -77,7 +78,7 @@ const LandingPage: React.FC = () => {
           <ProjectCard
             title="Project 2: Cek Khodam"
             description="Cek khodam is the Indonesia Tiktok trend. The project colaborate with local Shaman to fortell your Khodam."
-            imageUrl="public/cek_khodam.png"
+            imageUrl={CheckKhodam}
             projectLink="/portofolio-2"
           />
           {/* Add more ProjectCard components here */}
