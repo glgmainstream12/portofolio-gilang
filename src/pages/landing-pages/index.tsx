@@ -71,13 +71,13 @@ const LandingPage: React.FC = () => {
           <ProjectCard
             title="Project 1: Landing Page Bakery Delight"
             description="FIRST project with React JS. Page of bakery delight restaurant that already establish since 1939. The important updgrade for Internet of Things ."
-            imageUrl="src/assets/roti_enak.png"
+            imageUrl="public/roti_enak.png"
             projectLink="/portofolio-1"
           />
           <ProjectCard
             title="Project 2: Cek Khodam"
             description="Cek khodam is the Indonesia Tiktok trend. The project colaborate with local Shaman to fortell your Khodam."
-            imageUrl="src/assets/cek_khodam.png"
+            imageUrl="public/cek_khodam.png"
             projectLink="/portofolio-2"
           />
           {/* Add more ProjectCard components here */}
