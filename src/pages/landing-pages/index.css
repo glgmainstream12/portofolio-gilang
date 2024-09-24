@@ -1,0 +1,201 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #000000, #434343);
+  color: white;
+}
+
+.landing-container {
+  text-align: center;
+}
+
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: linear-gradient(to bottom, #000000, #434343);
+  color: #fff;
+  padding: 15px 30px;
+  height: 100px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.header .logo {
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 50px;
+  width: 100px;
+}
+
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.landing-header {
+  height: 75vh; /* Keep the full height for the header section */
+  display: flex; /* Use Flexbox to center the content */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  box-sizing: border-box; /* Ensures padding is included within the height */
+}
+
+.landing-header-content {
+  height: 500px; /* Manually set the height for the inner content */
+  display: flex; /* Flexbox for centering the content inside */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center the items vertically inside the content */
+  align-items: center; /* Center the items horizontally inside the content */
+  text-align: center; /* Align text in the center */
+}
+
+
+.profile-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  padding: 50px 20px;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc; /* Slightly lighter than pure white */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+}
+
+.about {
+  height: 50vh;
+}
+
+.experience {
+  height: 50vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #fff;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px; /* To offset the margin of child cards */
+}
+
+.project-card,
+.experience-card {
+  width: calc(33.333% - 30px);
+  margin: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .project-card,
+  .experience-card {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card,
+  .experience-card {
+    width: calc(100% - 30px);
+  }
+}
+
+/* Contact Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color:linear-gradient #434343;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #000000;
+}
+
+/* Footer Styles */
+footer {
+  background-color: linear-gradient(to bottom, #000000, #434343);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+

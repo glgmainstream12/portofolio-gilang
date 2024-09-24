@@ -1,0 +1,35 @@
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    background-color: #fff;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .project-card h2 {
+    margin-top: 15px;
+    font-size: 1.5em;
+  }
+  
+  .project-card p {
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  

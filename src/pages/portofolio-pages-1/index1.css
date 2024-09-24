@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(232, 187, 128);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.bakery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(152, 89, 12);
+    padding: 15px 30px;
+}
+
+.bakery-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.bakery-nav a {
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.bakery-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    background-color: blanchedalmond;
+}
+
+.bakery-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bakery-cta-btn {
+    background-color: rgb(152, 89, 12);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.bakery-about {
+    padding: 40px;
+    text-align: center;
+}
+
+.bakery-products {
+    padding: 40px;
+    background-color: blanchedalmond;
+}
+
+.bakery-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.bakery-product-item {
+    text-align: center;
+}
+
+.bakery-contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.bakery-contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0;
+}
+
+.bakery-contact-form input,
+.bakery-contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bakery-contact-form textarea {
+    grid-column: span 2;
+    height: 150px;
+}
+
+.bakery-contact-form button {
+    grid-column: span 2;
+    padding: 15px;
+    background-color: rgb(152, 89, 12);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.bakery-footer {
+    padding: 20px;
+    background-color: blanchedalmond;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+.experience-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px;
+    width: 300px;
+  }
+  
+  .experience-image {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    background-color: white;
+  }
+  
+  .experience-info {
+    padding: 15px;
+    color: white;
+  }
+  
+  .experience-info h3 {
+    margin-top: 0;
+  }
+  
+  .experience-info h4 {
+    margin: 5px 0;
+    color: #ccc;
+  }
+  
+  .duration {
+    font-style: italic;
+    color: #aaa;
+  }
+  
+  .experience-info p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
